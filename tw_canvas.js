@@ -5,6 +5,13 @@
  * @property {PenAttributes} penAttributes - cached pen attributes for the renderer. This is the authoritative value for
  *   diameter but not for pen color.
  */
+
+/**
+ * Host for the Pen-related blocks in Scratch 3.0
+ * @param {Runtime} runtime - the runtime instantiating this block package.
+ * @constructor
+ */
+
 class canvas {
     constructor(runtime) {
         /**
