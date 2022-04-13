@@ -21,7 +21,8 @@ class canvas {
         return {
             id: 'canvas',
             name: 'Canvas',
-            blockIconURI: blockIconURI,
+            color1: '#000000',
+            color2: '#AAAAAA',
             blocks: [{
                     opcode: 'beginPath',
                     blockType: BlockType.COMMAND,
