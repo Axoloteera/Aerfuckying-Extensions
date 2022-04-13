@@ -25,391 +25,391 @@ class canvas {
             color2: '#AAAAAA',
             blocks: [{
                     opcode: 'beginPath',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'beginPath',
                     arguments: {}
                 },
                 {
                     opcode: 'closePath',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'closePath',
                     arguments: {}
                 },
                 {
                     opcode: 'moveTo',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'moveTo([X],[Y])',
                     arguments: {
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'lineTo',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'lineTo([X],[Y])',
                     arguments: {
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'arc',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'arc([X],[Y],[RADIUS],[START_ANGLE],[END_ANGLE])',
                     arguments: {
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         RADIUS: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '100'
                         },
                         START_ANGLE: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         END_ANGLE: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '3.1415926'
                         }
                     }
                 },
                 {
                     opcode: 'rect',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'rect([X],[Y],[W],[H])',
                     arguments: {
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         W: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '100'
                         },
                         H: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '100'
                         }
                     }
                 },
                 {
                     opcode: 'clip',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'clip'
                 },
                 {
                     opcode: 'setLineWidth',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setLineWidth([LINE_WIDTH])',
                     arguments: {
                         LINE_WIDTH: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '1'
                         }
                     }
                 },
                 {
                     opcode: 'setLineCap',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setLineCap([LINE_CAP])',
                     arguments: {
                         LINE_CAP: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'round'
                         }
                     }
                 },
                 {
                     opcode: 'setStrokeStyle',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setStrokeStyle([STROKE_STYLE])',
                     arguments: {
                         STROKE_STYLE: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: '#000000'
                         }
                     }
                 },
                 {
                     opcode: 'setFillStyle',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setFillStyle([FILL_STYLE])',
                     arguments: {
                         FILL_STYLE: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: '#000000'
                         }
                     }
                 },
                 {
                     opcode: 'stroke',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'stroke'
                 },
                 {
                     opcode: 'fill',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'fill'
                 },
                 {
                     opcode: 'clearRect',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'clearRect([X],[Y],[W],[H])',
                     arguments: {
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         W: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '480'
                         },
                         H: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '360'
                         }
                     }
                 },
                 {
                     opcode: 'setFont',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setFont([FONT])',
                     arguments: {
                         FONT: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: '30px Arial'
                         }
                     }
                 },
                 {
                     opcode: 'strokeText',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'strokeText([TEXT],[X],[Y])',
                     arguments: {
                         TEXT: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'hello world'
                         },
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'fillText',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'fillText([TEXT],[X],[Y])',
                     arguments: {
                         TEXT: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'hello world'
                         },
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'measureText',
-                    blockType: BlockType.REPORTER,
+                    blockType: Scratch.BlockType.REPORTER,
                     text: 'measureText([TEXT])',
                     arguments: {
                         TEXT: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'hello world'
                         }
                     }
                 },
                 {
                     opcode: 'loadImage',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'loadImage([IMAGE_ID])',
                     arguments: {
                         IMAGE_ID: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'bcaaa8547a07cfe572c0967ba829e99d.svg'
                         }
                     }
                 },
                 {
                     opcode: 'drawImage',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'drawImage([IMAGE_ID],[X],[Y])',
                     arguments: {
                         IMAGE_ID: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'bcaaa8547a07cfe572c0967ba829e99d.svg'
                         },
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'scale',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'scale([SCALE_W],[SCALE_H])',
                     arguments: {
                         SCALE_W: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '1.0'
                         },
                         SCALE_H: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '1.0'
                         }
                     }
                 },
                 {
                     opcode: 'rotate',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'rotate([ANGLE])',
                     arguments: {
                         ANGLE: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'translate',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'translate([X],[Y])',
                     arguments: {
                         X: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         Y: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'transform',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'transform([A],[B],[C],[D],[E],[F])',
                     arguments: {
                         A: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         B: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         C: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         D: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         E: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         },
                         F: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'clearTransform',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'clearTransform'
                 },
                 {
                     opcode: 'save',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'save'
                 },
                 {
                     opcode: 'restore',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'restore'
                 },
                 {
                     opcode: 'setGlobalAlpha',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setGlobalAlpha([ALPHA])',
                     arguments: {
                         ALPHA: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '1.0'
                         }
                     }
                 },
                 {
                     opcode: 'setGlobalCompositeOperation',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'setGlobalCompositeOperation([CompositeOperation])',
                     arguments: {
                         CompositeOperation: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'source-over'
                         }
                     }
                 },
                 {
                     opcode: 'switchCanvas',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'switchCanvas([NUMBER])',
                     arguments: {
                         NUMBER: {
-                            type: ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.NUMBER,
                             defaultValue: '0'
                         }
                     }
                 },
                 {
                     opcode: 'stampOnStage',
-                    blockType: BlockType.COMMAND,
+                    blockType: Scratch.BlockType.COMMAND,
                     text: 'stampOnStage'
                 },
             ],
