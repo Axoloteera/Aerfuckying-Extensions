@@ -289,7 +289,7 @@ class acamp_pen {
     getInfo () {
         return {
             id: 'pen',
-            name: 'Pen'
+            name: 'Pen',
             blocks: [
                 {
                     opcode: 'print',
