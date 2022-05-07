@@ -1,2 +1,2 @@
 # Scratch-Extensions
-Some extensions for Scratch (Turbowarp &amp; CaO Community)
+改编于https://github.com/wuxian425/Scratch-Extensions
